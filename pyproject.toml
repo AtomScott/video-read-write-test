@@ -1,0 +1,37 @@
+[project]
+name = "video-read-write-test"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy",
+    "opencv-python",
+    "pyyaml",
+    "psutil",
+    "py3nvml",
+    "numba",
+    "tqdm>=4.66.5",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "C",  # flake8-comprehensions
+    "B",  # flake8-bugbear
+]
+ignore = [
+    "E203",  # Whitespace before ':'
+    "E266",  # Too many leading '#' for block comment
+    "E501",  # Line too long
+    "B008",  # Do not perform function calls in argument defaults
+    "C901",  # Function is too complex
+]
+
+[tool.ruff.isort]
+known-first-party = ["video_read_write_test"]

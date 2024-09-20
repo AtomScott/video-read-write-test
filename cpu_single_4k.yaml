@@ -1,0 +1,6 @@
+use_gpu: false
+max_frame_count: 100
+input_file: "video_4k.mp4"
+output_file: "output_cpu.mp4"
+batch:
+  enabled: false
