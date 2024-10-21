@@ -1,0 +1,19 @@
+input_videos:
+  - "GX010032_trimmed.MP4"
+  - "GX010142_trimmed.MP4"
+use_gpu: false
+max_frame_count: 100
+output_video: "output_cpu.mp4"
+batch:
+  enabled: false
+
+stitcher_kwargs:
+  final_megapix: -1
+  medium_megapix: 1
+  low_megapix: -1
+  blender_type: multiband
+  blend_strength: 5
+  crop: false
+  warper_type: spherical
+  detector: orb
+  confidence_threshold: 0.1

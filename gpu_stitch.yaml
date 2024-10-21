@@ -1,0 +1,8 @@
+input_videos:
+  - "GX010032_trimmed_nvenc.MP4"
+  - "GX010142_trimmed_nvenc.MP4"
+use_gpu: true
+max_frame_count: 100
+output_video: "output_gpu.mp4"
+batch:
+  enabled: false
