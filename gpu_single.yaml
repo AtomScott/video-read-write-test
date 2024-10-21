@@ -1,5 +1,0 @@
-use_gpu: true
-input_file: "input_4k_video.mp4"
-output_file: "output_gpu.mp4"
-batch:
-  enabled: false

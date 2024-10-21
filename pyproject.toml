@@ -3,7 +3,7 @@ name = "video-read-write-test"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = "==3.10"
 dependencies = [
     "numpy",
     "opencv-python",
@@ -12,11 +12,14 @@ dependencies = [
     "py3nvml",
     "numba",
     "tqdm>=4.66.5",
+    "cupy-cuda12x>=13.3.0",
+    "pynvvideocodec>=1.0.2",
+    "cmake>=3.30.3",
 ]
 
 [tool.ruff]
 line-length = 120
-target-version = "py311"
+target-version = "py310"
 select = [
     "E",  # pycodestyle errors
     "W",  # pycodestyle warnings

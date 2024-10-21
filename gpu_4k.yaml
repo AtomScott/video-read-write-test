@@ -1,0 +1,4 @@
+use_gpu: true
+max_frame_count: 100
+input_file: "video_4k.mp4"
+output_file: "output_gpu.mp4"
